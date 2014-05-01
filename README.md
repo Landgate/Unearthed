@@ -120,3 +120,8 @@ If you have data you need to map you're spoilt for choice these days:
 
 ## Help
 [gis.stackexchange.com](http://gis.stackexchange.com/) is your friend.
+
+## @TODO
+* Data Dictionaries
+* Pretty ```layers.json```
+* Formatting & typos
