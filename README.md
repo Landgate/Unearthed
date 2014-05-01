@@ -53,8 +53,23 @@ To consume these APIs you'll want a client library to do the heavy lifting for y
 #### WMS & WMTS
 [OpenLayers](http://openlayers.org/), [OpenLayers 3](http://ol3js.org/) (still in beta), [Leaflet](http://leafletjs.com/), amd [MapBox JS](https://www.mapbox.com/mapbox.js) can all be used to easily consume WMS and WMTS APIs.
 
-#### Google Maps API
+WMS and WMTS access to *Locate* only require the mapId.
+
+> ***Locate's* mapId:** 09372590152434720789-00913315481290556980
+> Resources mapId:** 09372590152434720789-11493353092997567468
+
+**[WMS Capabilities](https://mapsengine.google.com/09372590152434720789-00913315481290556980-4/wms/?REQUEST=GetCapabilities&VERSION=1.3.0)** | **[WMTS Capabilities](https://mapsengine.google.com/09372590152434720789-00913315481290556980-4/wmts/?REQUEST=GetCapabilities&VERSION=1.0&SERVICE=WMTS)**
+
+#### Google Maps JavaScript API
 The [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/tutorial) has connectors specifically [for Google Maps Engine](https://developers.google.com/maps/documentation/javascript/mapsenginelayers).
+
+The Google Maps JavaScript API has two ways of accessing data in Google Maps Engine:
+
+1. Via the layerId (recommended - see ```layers.json```), or
+2. By supplying a mapId and a layerKey.
+
+> ***Locate's* mapID:** 09372590152434720789-00913315481290556980
+> Resources mapId:** 09372590152434720789-11493353092997567468
 
 #### Desktop
 For viewing and manipulating spatial data on the desktop you can't go past [QGIS](http://www.qgis.org/en/site/), the open source Geographic Information System.
@@ -70,7 +85,13 @@ If your focus is actually getting at the raw data itself, running queries agains
 
 The GME API is a RESTful API that speaks and consumes JSON. Our [Getting Started](https://github.com/Landgate/slip-developer-documentation/wiki/Getting-Started) documentation and [GME API Tutorial](https://github.com/Landgate/slip-developer-documentation/wiki/Tutorial-%231%3A-The-GME-API-%26-WFS) have more information on working with the GME API. We've also got a few [code samples](https://github.com/Landgate/slip-code-samples) demonstrating more advanced uses of the GME API.
 
-#### Visualisin GeoJSON
+Accessing data via the Google Maps Engine API or WFS is at the datasource-level and requires a datasource assetId to be provided (see ```layers.json```).
+
+> **GME API:** https://www.googleapis.com/mapsengine/v1/tables/{assetId}/features?version=published&key={your-api-key}
+
+> **WFS:** https://clients6.google.com/mapsengine/wfs_experimental/wfs/{assetId}/?REQUEST=GetCapabilities&SERVICE=WFS2.0&assetVersion=published
+
+#### Visualising GeoJSON
 You can also map the GeoJSON data that the GME API returns. [OpenLayers](http://openlayers.org/dev/examples/?q=geojson) and [Leaflet](http://leafletjs.com/examples/geojson.html) support GeoJSON natively and GitHub itself [will render GeoJSON files](https://help.github.com/articles/mapping-geojson-files-on-github).
 
 > *Note:* WFS access is available if needs be, but it's still an experimental service. See our [WFS page](https://github.com/Landgate/slip-developer-documentation/wiki/WFS) for more information.
@@ -95,31 +116,5 @@ If you have data you need to map you're spoilt for choice these days:
 * [TileMill](https://www.mapbox.com/tilemill/)
 * [MangoMap](http://mangomap.com/)
 
-### Help
+## Help
 [gis.stackexchange.com](http://gis.stackexchange.com/) is your friend.
-
-
-### WMS & WMTS
-WMS and WMTS access to *Locate* only require the mapId.
-
-> ***Locate's* mapId:** 09372590152434720789-00913315481290556980
-> Resources mapId:** 09372590152434720789-11493353092997567468
-
-**[WMS Capabilities](https://mapsengine.google.com/09372590152434720789-00913315481290556980-4/wms/?REQUEST=GetCapabilities&VERSION=1.3.0)** | **[WMTS Capabilities](https://mapsengine.google.com/09372590152434720789-00913315481290556980-4/wmts/?REQUEST=GetCapabilities&VERSION=1.0&SERVICE=WMTS)**
-
-
-### The GME API & WFS
-Accessing data via the Google Maps Engine API or WFS is at the datasource-level and requires a datasource assetId to be provided (see ```layers.json```).
-
-> **GME API:** https://www.googleapis.com/mapsengine/v1/tables/{assetId}/features?version=published&key={your-api-key}
-
-> **WFS:** https://clients6.google.com/mapsengine/wfs_experimental/wfs/{assetId}/?REQUEST=GetCapabilities&SERVICE=WFS2.0&assetVersion=published
-
-### Google Maps JavaScript API
-The Google Maps JavaScript API has two ways of accessing data in Google Maps Engine:
-
-1. Via the layerId (recommended - see ```layers.json```), or
-2. By supplying a mapId and a layerKey.
-
-> ***Locate's* mapID:** 09372590152434720789-00913315481290556980
-> Resources mapId:** 09372590152434720789-11493353092997567468
