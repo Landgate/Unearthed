@@ -99,6 +99,9 @@ You can also map the GeoJSON data that the GME API returns. [OpenLayers](http://
 #### Command-line
 If command-line is more your thing there's work underway to support the GME API within the [GDAL](http://www.gdal.org/). See the [GMEDriver documentation](http://trac.osgeo.org/gdal/wiki/GMEDriver) for more information.
 
+#### "This resource is too large to be accessed via this API call."
+If you receive this error message let us know and we can provide the details for an account with special access to larger data sources.
+
 
 ## Tools
 ### APIs
