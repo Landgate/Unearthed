@@ -99,7 +99,7 @@ You can also map the GeoJSON data that the GME API returns. [OpenLayers](http://
 #### Command-line
 If command-line is more your thing there's work underway to support the GME API within the [GDAL](http://www.gdal.org/). See the [GMEDriver documentation](http://trac.osgeo.org/gdal/wiki/GMEDriver) for more information.
 
-#### *"This resource is too large to be accessed via this API call."*
+#### Error: *"This resource is too large to be accessed via this API call."*
 If you receive this error message let us know and we can provide the details for an account with special access to larger data sources.
 
 
@@ -113,16 +113,7 @@ If you need to manipulate, convert, and analyse spatial data [QGIS](http://www.q
 ### Make your own maps
 If you have data you need to map you're spoilt for choice these days:
 
-* [Google Maps Engine](http://mapsengine.google.com) (a free version of the same platform SLIP is built on [subject to [these limits](https://support.google.com/mapsengine/answer/3342103?hl=en)].
+* [Google Maps Engine](http://mapsengine.google.com) (a free version of the same platform SLIP is built on (subject to [these limits](https://support.google.com/mapsengine/answer/3342103?hl=en)).
 * [CartoDB](http://cartodb.com/)
 * [TileMill](https://www.mapbox.com/tilemill/)
 * [MangoMap](http://mangomap.com/)
-
-## Help
-[gis.stackexchange.com](http://gis.stackexchange.com/) is your friend.
-
-## @TODO
-* Data Dictionaries
-* Pretty ```layers.json```
-* Formatting & typos
-* https://github.com/googlemaps
