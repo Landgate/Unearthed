@@ -1,14 +1,14 @@
 Unearthed
 =========
 
-Resources for developers in the Unearthed Hackathon using Landgate's SLIP data platform.
+Resources for developers using Landgate's SLIP data platform in the Unearthed Hackathon.
 
 This new release of the SLIP platform is currently in beta and is the product of a partnership between Landgate and Google built on the Google Maps Engine cloud-based platform.
 
 ## Resources Map Service
-Landgate have prepared a map service containing more than 50 resource and environment-related datasets from a range of WA Government agencies.
+Landgate have prepared a map service containing more than 50 resource and environment related datasets from a range of WA Government agencies.
 
-The data are available to inspect and query in the [SLIP Resources map Viewer](https://mapsengine.google.com/09372590152434720789-11493353092997567468-4/mapview/?authuser=0).
+The data are available to inspect and query in the [SLIP Resources map viewer](https://mapsengine.google.com/09372590152434720789-11493353092997567468-4/mapview/?authuser=0).
 
 ### layers.json
 This JSON dump contains the list of layers in the map service, along with their layerIds, layerKeys, datasourceIds, URIs for their datasources, and some additional useful metadata.
@@ -32,11 +32,13 @@ For easier viewing of layers.json use the [JSONView](https://chrome.google.com/w
 > **Coming Soon:** We're hard at work on a brand new search and discovery tool! We'll intergrate all of this information and more in a single easy to use web interface with handy tools for developers.
 
 ## **Locate** Map Service
-We also have our *Locate* map service available for use. For more information check out [its GitHub page](https://github.com/Landgate/Locate).
+We also have our *Locate* map service available with a wide variety of WA Government data available for use. For more information check out [its GitHub page](https://github.com/Landgate/Locate).
 
 
 ## Accessing Data
-This section will serve as a *brief* introduction to develop off the SLIP platform. More detailed information, step-by-step guides, tutorials, code samples, and much more are available on our **[SLIP Developer Documentation wiki](https://github.com/Landgate/slip-developer-documentation/wiki)**.
+This section will serve as a **brief** introduction to developing off of the SLIP platform. More detailed information, step-by-step guides, tutorials, code samples, and much more are available on our **[SLIP Developer Documentation](https://github.com/Landgate/slip-developer-documentation/wiki)**.
+
+> Code samples are available for all of these libraries over on our [SLIP Code Samples](https://github.com/Landgate/slip-code-samples) page. Check them out!
 
 ### Spatial whatnow?
 If you're new to working with spatial data we can highly recommend a read through of [GIS for Dummies](http://wiki.openstreetmap.org/wiki/GIS_for_Dummies_(written_by_a_dummy)).
@@ -53,31 +55,29 @@ To consume these APIs you'll want a client library to do the heavy lifting for y
 #### WMS & WMTS
 [OpenLayers](http://openlayers.org/), [OpenLayers 3](http://ol3js.org/) (still in beta), [Leaflet](http://leafletjs.com/), amd [MapBox JS](https://www.mapbox.com/mapbox.js) can all be used to easily consume WMS and WMTS APIs.
 
-WMS and WMTS access to *Locate* only require the mapId.
+WMS and WMTS access require the mapId.
 
 > ***Locate's* mapId:** 09372590152434720789-00913315481290556980
+>
 > Resources mapId:** 09372590152434720789-11493353092997567468
-
-**[WMS Capabilities](https://mapsengine.google.com/09372590152434720789-00913315481290556980-4/wms/?REQUEST=GetCapabilities&VERSION=1.3.0)** | **[WMTS Capabilities](https://mapsengine.google.com/09372590152434720789-00913315481290556980-4/wmts/?REQUEST=GetCapabilities&VERSION=1.0&SERVICE=WMTS)**
 
 #### Google Maps JavaScript API
 The [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/tutorial) has connectors specifically [for Google Maps Engine](https://developers.google.com/maps/documentation/javascript/mapsenginelayers).
 
-The Google Maps JavaScript API has two ways of accessing data in Google Maps Engine:
+There are two ways of accessing data in Google Maps Engine:
 
 1. Via the layerId (recommended - see ```layers.json```), or
 2. By supplying a mapId and a layerKey.
 
 > ***Locate's* mapID:** 09372590152434720789-00913315481290556980
+>
 > Resources mapId:** 09372590152434720789-11493353092997567468
 
 #### Desktop
 For viewing and manipulating spatial data on the desktop you can't go past [QGIS](http://www.qgis.org/en/site/), the open source Geographic Information System.
 
 #### Other
-For non-client facing calls you can either build the URL string yourself or use tools like [OWSLib (Python)](https://pypi.python.org/pypi/OWSLib) or [GeoTools (Java)](http://geotools.org/).
-
-> Code samples are available for all of these libraries over on our [SLIP Code Samples](https://github.com/Landgate/slip-code-samples) page. Check them out!
+For non-client facing calls you can either build the URL yourself or use tools like [OWSLib (Python)](https://pypi.python.org/pypi/OWSLib) or [GeoTools (Java)](http://geotools.org/).
 
 
 ### I need to be able to retrieve and run queries against the raw data
