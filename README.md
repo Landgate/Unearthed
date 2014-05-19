@@ -59,7 +59,7 @@ WMS and WMTS access require the mapId.
 
 > ***Locate's* mapId:** 09372590152434720789-00913315481290556980
 >
-> Resources mapId:** 09372590152434720789-11493353092997567468
+> **Resources mapId:** 09372590152434720789-11493353092997567468
 
 #### Google Maps JavaScript API
 The [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/tutorial) has connectors specifically [for Google Maps Engine](https://developers.google.com/maps/documentation/javascript/mapsenginelayers).
@@ -71,7 +71,7 @@ There are two ways of accessing data in Google Maps Engine:
 
 > ***Locate's* mapID:** 09372590152434720789-00913315481290556980
 >
-> Resources mapId:** 09372590152434720789-11493353092997567468
+> **Resources mapId:** 09372590152434720789-11493353092997567468
 
 #### Desktop
 For viewing and manipulating spatial data on the desktop you can't go past [QGIS](http://www.qgis.org/en/site/), the open source Geographic Information System.
