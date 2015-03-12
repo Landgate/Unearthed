@@ -3,7 +3,11 @@ Unearthed
 
 Resources for developers using Landgate's SLIP data platform in the Unearthed Hackathon.
 
-This new release of the SLIP platform is currently in beta and is the product of a partnership between Landgate and Google built on the Google Maps Engine cloud-based platform.
+This version of the SLIP platform is built on the Google Maps Engine platform.
+
+# Finding data
+
+There are a range of public services available in SLIP for you to use - [check them out](http://slip.landgate.wa.gov.au/Pages/Public-Services.aspx). If you're after a specific dataset head on over to the [SLIP website](http://slip.landgate.wa.gov.au/) and search.
 
 ## Resources Map Service
 Landgate have prepared a map service containing more than 50 resource and environment related datasets from a range of WA Government agencies.
@@ -11,7 +15,7 @@ Landgate have prepared a map service containing more than 50 resource and enviro
 The data are available to inspect and query in the [SLIP Resources map viewer](https://mapsengine.google.com/09372590152434720789-11493353092997567468-4/mapview/?authuser=0).
 
 ### layers.json
-This JSON dump contains the list of layers in the map service, along with their layerIds, layerKeys, datasourceIds, URIs for their datasources, and some additional useful metadata.
+This JSON dump contains the list of layers in the map service, along with their layerIds, layerKeys, datasourceIds, URIs for their datasources, and some additional useful metadata. We'll explain how you can use these in a bit.
 
 ```javascript
 {
@@ -27,21 +31,20 @@ This JSON dump contains the list of layers in the map service, along with their 
 }
 ```
 
-For easier viewing of layers.json use the [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) Chrome extension or the free online [JSON Visualisation](http://chris.photobooks.com/json/default.htm) tool.
+For easier viewing of layers.json use the [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) Chrome extension or a free online [JSON Visualisation](http://chris.photobooks.com/json/default.htm) tool.
 
-> **Coming Soon:** We're hard at work on a brand new search and discovery tool! We'll intergrate all of this information and more in a single easy to use web interface with handy tools for developers.
 
 ## **Locate** Map Service
 We also have our *Locate* map service available with a wide variety of WA Government data available for use. For more information check out [its GitHub page](https://github.com/Landgate/Locate).
 
 
 ## Accessing Data
-This section will serve as a **brief** introduction to developing off of the SLIP platform. More detailed information, step-by-step guides, tutorials, code samples, and much more are available on our **[SLIP Developer Documentation](https://github.com/Landgate/slip-developer-documentation/wiki)**.
+This section will serve as a brief introduction to developing off of the SLIP platform. More detailed information, step-by-step guides, tutorials, code samples, and much more are available on our **[SLIP Developer Documentation](https://github.com/Landgate/slip-developer-documentation/wiki)**.
 
 > Code samples are available for all of these libraries over on our [SLIP Code Samples](https://github.com/Landgate/slip-code-samples) page. Check them out!
 
 ### Spatial whatnow?
-If you're new to working with spatial data we can highly recommend a read through of [GIS for Dummies](http://wiki.openstreetmap.org/wiki/GIS_for_Dummies_(written_by_a_dummy)).
+If you're new to working with spatial data we can highly recommend a read through of the excellent [mapschool.io](http://mapschool.io/) site.
 
 ### I just need to be able to see something on a map
 If you simply need to be able to generate a visual representation of the data (e.g. display it on a map, generate a once-off image) you have three APIs available:
@@ -53,7 +56,7 @@ If you simply need to be able to generate a visual representation of the data (e
 To consume these APIs you'll want a client library to do the heavy lifting for you. Fortunately you're spoilt for choice!
 
 #### WMS & WMTS
-[OpenLayers](http://openlayers.org/), [OpenLayers 3](http://ol3js.org/) (still in beta), [Leaflet](http://leafletjs.com/), amd [MapBox JS](https://www.mapbox.com/mapbox.js) can all be used to easily consume WMS and WMTS APIs.
+[OpenLayers](http://ol3js.org/), [Leaflet](http://leafletjs.com/), amd [MapBox JS](https://www.mapbox.com/mapbox.js) can all be used to easily consume WMS and WMTS APIs.
 
 WMS and WMTS access require the mapId.
 
@@ -100,7 +103,7 @@ You can also map the GeoJSON data that the GME API returns. [OpenLayers](http://
 If command-line is more your thing there's work underway to support the GME API within the [GDAL](http://www.gdal.org/). See the [GMEDriver documentation](http://trac.osgeo.org/gdal/wiki/GMEDriver) for more information.
 
 #### Error: *"This resource is too large to be accessed via this API call."*
-If you receive this error message let us know and we can provide the details for an account with special access to larger data sources.
+If you receive this error message let one of our mentors know and we can provide the details for an account with special access to larger data sources.
 
 
 ## Tools
