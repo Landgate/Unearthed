@@ -114,7 +114,6 @@ If you need to manipulate, convert, and analyse spatial data [QGIS](http://www.q
 ### Make your own maps
 If you have data you need to map you're spoilt for choice these days:
 
-* [Google Maps Engine](http://mapsengine.google.com) (a free version of the same platform SLIP is built on (subject to [these limits](https://support.google.com/mapsengine/answer/3342103?hl=en)).
 * [CartoDB](http://cartodb.com/)
 * [TileMill](https://www.mapbox.com/tilemill/)
 * [MangoMap](http://mangomap.com/)
