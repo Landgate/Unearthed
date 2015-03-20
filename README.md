@@ -1,13 +1,11 @@
 Unearthed
 =========
 
-Resources for developers using Landgate's SLIP data platform in the Unearthed Hackathon.
-
-This version of the SLIP platform is built on the Google Maps Engine platform.
+Resources for developers in the Unearthed hackathon using Landgate's SLIP data platform.
 
 # Finding data
 
-There are a range of public services available in SLIP for you to use - [check them out](http://slip.landgate.wa.gov.au/Pages/Public-Services.aspx). If you're after a specific dataset head on over to the [SLIP website](http://slip.landgate.wa.gov.au/) and search.
+We've highlighted two of our data services here - the Resources sector service, and Locate - but there are range of other public data services available [for you to use](http://slip.landgate.wa.gov.au/Pages/Public-Services.aspx). If you're after a specific dataset and can't find it, then head on over and [search for it on the SLIP website](http://slip.landgate.wa.gov.au/).
 
 ## Resources Map Service
 Landgate have prepared a map service containing more than 50 resource and environment related datasets from a range of WA Government agencies.
@@ -15,7 +13,7 @@ Landgate have prepared a map service containing more than 50 resource and enviro
 The data are available to inspect and query in the [SLIP Resources map viewer](https://mapsengine.google.com/09372590152434720789-11493353092997567468-4/mapview/?authuser=0).
 
 ### layers.json
-This JSON dump contains the list of layers in the map service, along with their layerIds, layerKeys, datasourceIds, URIs for their datasources, and some additional useful metadata. We'll explain how you can use these in a bit.
+The JSON file in this repo contains the list of layers in the map service, along with their layerIds, layerKeys, datasourceIds, URIs for their datasources, and some additional useful metadata. We'll explain how you can use these in a bit.
 
 ```javascript
 {
@@ -35,10 +33,10 @@ For easier viewing of layers.json use the [JSONView](https://chrome.google.com/w
 
 
 ## **Locate** Map Service
-We also have our *Locate* map service available with a wide variety of WA Government data available for use. For more information check out [its GitHub page](https://github.com/Landgate/Locate).
+We also have our *Locate* map service available with a wide variety of data from across WA Government open for use. For more information check out [its GitHub page](https://github.com/Landgate/Locate).
 
 
-## Accessing Data
+## Using The Data
 This section will serve as a brief introduction to developing off of the SLIP platform. More detailed information, step-by-step guides, tutorials, code samples, and much more are available on our **[SLIP Developer Documentation](https://github.com/Landgate/slip-developer-documentation/wiki)**.
 
 > Code samples are available for all of these libraries over on our [SLIP Code Samples](https://github.com/Landgate/slip-code-samples) page. Check them out!
