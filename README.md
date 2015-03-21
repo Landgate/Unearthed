@@ -62,6 +62,10 @@ WMS and WMTS access require the mapId.
 >
 > **Resources mapId:** 09372590152434720789-11493353092997567468
 
+[Locate WMS](https://mapsengine.google.com/09372590152434720789-00913315481290556980-4/wms/)
+
+[Resources WMS](https://mapsengine.google.com/09372590152434720789-11493353092997567468-4/wms/)
+
 #### Google Maps JavaScript API
 The [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/tutorial) has connectors specifically [for Google Maps Engine](https://developers.google.com/maps/documentation/javascript/mapsenginelayers).
 
